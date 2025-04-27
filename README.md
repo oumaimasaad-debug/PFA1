@@ -36,7 +36,7 @@ Notre application propose deux fonctionnalités principales accessibles après a
 
 ## 🛠️ Technologies Utilisées
 
-### 6.1 Environnements de Développement et Outils Collaboratifs
+### 1 Environnements de Développement et Outils Collaboratifs
 
 - **Google Colab** :  
   Utilisé pour les expérimentations IA initiales avec un accès gratuit aux GPU. Nous avons pu tester plusieurs modèles **text-to-image** et évaluer différents paramètres de génération dans un environnement cloud.
@@ -47,7 +47,7 @@ Notre application propose deux fonctionnalités principales accessibles après a
 - **Visual Studio Code** :  
   IDE principal du projet pour le développement backend (Flask), frontend (React), et la gestion des fichiers du projet. Il a également facilité le débogage et l'intégration avec GitHub.
 
-### 6.2 Technologies Frontend (Interface Utilisateur)
+### 2 Technologies Frontend (Interface Utilisateur)
 
 - **React.js** :  
   Utilisé pour construire l'interface utilisateur. React nous a permis de créer une application modulaire et dynamique avec des composants réutilisables, facilitant la gestion de la connexion utilisateur et de l'interaction avec l'application.
@@ -55,7 +55,7 @@ Notre application propose deux fonctionnalités principales accessibles après a
 - **CSS personnalisé & Bootstrap** :  
   Utilisé pour styliser l'application avec un design responsive, cohérent, et adapté à tous types d'écrans. Bootstrap a été utilisé pour simplifier la gestion des layouts, formulaires, et boutons.
 
-### 6.3 Technologies d'Intelligence Artificielle
+### 3 Technologies d'Intelligence Artificielle
 
 - **PyTorch** :  
   Utilisé comme bibliothèque principale pour charger les modèles, effectuer l'inférence sur GPU, manipuler les tenseurs, et contrôler le processus de génération d'images.
