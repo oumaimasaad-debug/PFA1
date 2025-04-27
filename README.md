@@ -92,7 +92,7 @@ Notre application propose deux fonctionnalités principales accessibles après a
 └── requirements.txt     # Dépendances du backend
 
 ```
-**⚙️ # Installation et Lancement**
+## ⚙️Installation et Lancement
 
 ### Backend (Python)
 
