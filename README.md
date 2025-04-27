@@ -103,22 +103,21 @@ Notre application propose deux fonctionnalités principales accessibles après a
 
 - **Lancement du serveur Flask** :
 Installez les dépendances avec la commande suivante :
-     ```bash
-     pip install -r requirements.txt
-     ```
-
+ ```bash
+  pip install -r requirements.txt
+ ```
 Lancez le serveur Flask en exécutant :
-     ```bash
+```bash
      python flux.py
      python data-process.py
-     ```
+ ```
 ### Frontend (React)
 
 **Installer les dépendances**  
    Allez dans le dossier Front et installez les dépendances avec npm :
-     ```bash
+```bash
      cd front
      npm install
-     npm start 
-     ```
+     npm start
+```
  
