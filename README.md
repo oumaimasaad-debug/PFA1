@@ -1,7 +1,5 @@
-# GenData
+# Synthetic Data Creation for Driver Monitoring Systems using Generative AI
 
-#Synthetic Data Creation for Driver Monitoring Systems using Generative 
-AI
 
 
 Bienvenue dans notre application web combinant **génération de datasets** et **création d'images IA** !
