@@ -1,0 +1,105 @@
+/* Texte dégradé */
+.gradient-text {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.gradient-text-numbers {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* Cartes en verre (glassmorphism amélioré) */
+.card-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px) saturate(120%);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.card-glass:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Effets de hover */
+.hover-translate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-translate:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Bordures de dégradé (améliorée) */
+.gradient-border {
+  height: 4px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc, #6a11cb);
+  border-radius: 2px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* Icônes */
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -45px auto 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 8px 15px rgba(106, 17, 203, 0.3);
+}
+
+/* Dégradés de fond */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.bg-gradient-info {
+  background: linear-gradient(135deg, #2575fc, #2dd4bf);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #2dd4bf, #10b981);
+}
+
+/* Texte mis en valeur */
+.highlight {
+  background: linear-gradient(120deg, #6a11cb30, #2575fc30);
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Ombres personnalisées */
+.shadow-lg {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation douce pour toutes les cartes */
+.card-stats, .card-user {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-stats:hover, .card-user:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}

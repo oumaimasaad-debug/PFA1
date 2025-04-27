@@ -1,0 +1,233 @@
+/* Nouveau style amélioré pour les pages d'authentification */
+:root {
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+    --dark-bg: #1a1a2e;
+    --light-text: rgba(255, 255, 255, 0.9);
+    --transition-speed: 0.4s;
+  }
+  
+  body {
+    /* Dégradé animé */
+    background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--light-text);
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .auth-card {
+    background-color: rgba(26, 26, 46, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem !important;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-card-body {
+    padding: 3rem 2.5rem !important;
+  }
+  
+  .auth-title {
+    font-weight: 800;
+    font-size: 2.2rem;
+    background: linear-gradient(to right, #fff, #c9d6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .auth-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  
+  .auth-input-group {
+    position: relative;
+    margin-bottom: 1.75rem;
+  }
+  /* Cible spécifiquement les inputs email et password */
+.auth-input[type="email"],
+.auth-input[type="password"] {
+  height: 3.5rem !important;          /* 56px */
+  padding: 1.25rem 1.5rem !important; /* 20px vertical, 24px horizontal */
+  font-size: 1.1rem !important;       /* Taille de texte augmentée */
+  line-height: 1.5 !important;        /* Meilleur alignement vertical */
+  margin-bottom: 1.5rem !important;   /* Espacement augmenté */
+}
+  .auth-input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    padding: 1rem 1.25rem !important;
+    font-size: 1rem !important;
+    border-radius: 0.75rem !important;
+    transition: all var(--transition-speed) ease;
+    height: auto;
+  }
+  
+  .auth-input:focus {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  
+  .auth-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300;
+  }
+  
+  .auth-btn {
+    padding: 1rem 2rem !important;
+    font-size: 1rem !important;
+    border-radius: 0.75rem !important;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color)) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 600 !important;
+    margin: 1.5rem 0;
+    transition: all var(--transition-speed) ease;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .auth-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-speed) ease;
+  }
+  
+  .auth-btn:hover::before {
+    opacity: 1;
+  }
+  
+  .auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(106, 17, 203, 0.4);
+  }
+  .auth-btn:active {
+    transform: translateY(0);
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all var(--transition-speed) ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icon:nth-child(1):hover { background-color: #4267B2; }
+  .social-icon:nth-child(2):hover { background-color: #1DA1F2; }
+  .social-icon:nth-child(3):hover { background-color: #e6ada8; }
+  
+  .auth-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+    font-size: 0.9rem;
+  }
+  
+  .auth-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .auth-link-bold {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .auth-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Animation pour les messages d'erreur */
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+  }
+  
+  .error-message {
+    animation: shake 0.4s ease;
+    background-color: rgba(255, 59, 48, 0.2);
+    border-left: 3px solid #ff3b30;
+    padding: 0.75rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .auth-card-body {
+      padding: 2rem 1.5rem !important;
+    }
+    
+    .auth-title {
+      font-size: 1.8rem;
+    }
+  }

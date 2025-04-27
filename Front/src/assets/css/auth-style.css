@@ -1,0 +1,36 @@
+/* Styles pour les pages d'authentification */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #1e1e2f, #1e1e24);
+    color: #ffffff;
+  }
+  
+  .auth-header {
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .auth-footer {
+    margin-top: auto;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .login-page .content,
+  .register-page .content {
+    padding: 3rem 0;
+  }
+  
+  .heart {
+    color: #e14eca;
+  }
+  
