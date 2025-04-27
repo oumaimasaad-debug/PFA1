@@ -24,13 +24,13 @@ Bienvenue dans notre application web combinant **génération de datasets** et *
 
 Notre application propose deux fonctionnalités principales accessibles après authentification :
 
-1. **Génération de Dataset à partir d'une Description (Flux + Defocus)**  
+### 1 Génération de Dataset à partir d'une Description (Flux + Defocus)  
    - L'utilisateur saisit une description comprenant :
      - Le **nombre de classes** souhaité.
      - Le **nom des classes**.
    - Le système génère automatiquement un **dataset structuré** (au format `.zip`) conforme aux standards de dataset d'images.
 
-2. **Génération d'une Image à partir d'une Description Simple (Defocus uniquement)**  
+### 2 Génération d'une Image à partir d'une Description Simple (Defocus uniquement) 
    - L'utilisateur fournit une **courte description textuelle**.
    - Le modèle IA génère une **image unique et réaliste** correspondant à cette description.
 
