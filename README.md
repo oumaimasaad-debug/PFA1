@@ -1,6 +1,7 @@
 # GenData
 
-# 🚗🤖📊La création de données synthétiques pour les systèmes de surveillance des conducteurs à l'aide de l'IA générative.
+#Synthetic Data Creation for Driver Monitoring Systems using Generative 
+AI
 
 
 Bienvenue dans notre application web combinant **génération de datasets** et **création d'images IA** !
