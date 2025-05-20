@@ -120,4 +120,7 @@ Lancez le serveur Flask en exécutant :
      npm install
      npm start
 ```
+ **Execution des modéles** 
+ -modele text-to-image https://github.com/oumaimasaad-debug/Controle/blob/master/flux_image_to_image.ipynb
+ -modele image-to image https://colab.research.google.com/github/oumaimasaad-debug/Controle/blob/master/flux_image_to_image.ipynb
  
