@@ -89,7 +89,7 @@ Notre application propose deux fonctionnalités principales accessibles après a
 │   ├── src/             # Code source React
 │   └── public/          # Fichiers statiques React
 ├── README.md            # Ce fichier de documentation
-└── requirements.txt     # Dépendances du backend
+    
 
 ```
 ## ⚙️Installation et Lancement
@@ -104,7 +104,8 @@ Notre application propose deux fonctionnalités principales accessibles après a
 - **Lancement du serveur Flask** :
 Installez les dépendances avec la commande suivante :
  ```bash
-  pip install -r requirements.txt
+ pip install Flask==2.2.2 flask-cors==3.1.1 gradio-client==1.0.0
+ 
  ```
 Lancez le serveur Flask en exécutant :
 ```bash
@@ -120,4 +121,7 @@ Lancez le serveur Flask en exécutant :
      npm install
      npm start
 ```
+**Execution des modeles**
+modele text to image https://www.kaggle.com/code/omaimasaad/notebookec87cef797
+modele image to image https://www.kaggle.com/code/omaimasaad/notebookec87cef797
  
