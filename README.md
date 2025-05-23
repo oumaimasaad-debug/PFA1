@@ -123,7 +123,7 @@ Lancez le serveur Flask en exécutant :
  **Execution des modéles** 
 
  
- modele text-to-image https://github.com/oumaimasaad-debug/Controle/blob/master/flux_image_to_image.ipynb
+ modele text-to-image (https://www.kaggle.com/code/omaimasaad/notebookec87cef797)
 
  modele image-to image https://colab.research.google.com/github/oumaimasaad-debug/Controle/blob/master/flux_image_to_image.ipynb
 
